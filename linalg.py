@@ -32,7 +32,7 @@ class Sector():
 		return self.demand
 
 
-class Leontieff():
+class Leontief():
 
 	def __init__(self, producer, consumer, sectors):
 		"""
@@ -214,7 +214,7 @@ class PredatorPreyModel():
 # demand = [sector.get_demand() for sector in sectors]
 
 
-# model = Leontieff(
+# model = Leontief(
 # 					np.array([
 # 							[0.45, 0.35, 0.15],
 # 							[0.15, 0.25, 0.05],
