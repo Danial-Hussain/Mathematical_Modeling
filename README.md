@@ -12,9 +12,9 @@ The input-output model represents a quantitative economic model that highlights 
 ![](https://latex.codecogs.com/gif.latex?%5Cinline%20%5C%5CA%3A%5Cmathrm%7BEconomy%7D%20%5C%5CD%3A%20%5Cmathrm%7BDemand%7D%20%5C%5CI%3A%20%5Cmathrm%7BIdentity%7D)
 
 Since closed models are quite rare in the real world, I chose to implement the open model for this project. Leontief's model has been used by a plethora of different institutions and companies ranging from the United Nations, General Electric and local governments for a range of applications such as calculating GDP, predicting demand for products/services, and public investments.
-### Lotka-Volterra Competition Dynamical System
+### Lotka-Volterra (Predator-Prey Model) Dynamical System
 The Lotka-Volterra model is a set of differential equations that model the interaction behind a predator and prey species in an ecological system. The equations describe how the populations of the two species evolve offer time depending on the predation rate and the reproduction rate of each species. The model makes various assumptions:
-1. Supplies are abundant fore the prey
+1. Supplies are abundant for the prey
 2. The population changes relative to its size.
 3. Environmental changes aren't present
 4. The predators can eat endlessly
@@ -26,3 +26,7 @@ This equation effectively demonstrates that the prey's population is dependent o
 The change in the predator's population over time can be represented by the following equation: ![](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cfrac%7Bdy%7D%7Bdt%7D%20%3D%20%5Cdelta%20xy%20-%20%5Cgamma%20y)
 
 This equation effectively delineates that the predator's population is dependent on the rate at which it grows due to consumption of the prey minus its intrinsic death rate.
+
+![](https://latex.codecogs.com/gif.latex?%5Cinline%20%5C%5C%5Calpha%3A%20%5Ctextrm%7BGrowth%20Rate%20of%20Prey%20Population%7D%20%5C%5Cx%3A%20%5Ctextrm%7BDensity%20of%20the%20Prey%7D%20%5C%5C%5Cbeta%3A%20%5Ctextrm%7BPredation%20Rate%7D%20%5C%5Cy%3A%20%5Ctextrm%7BDensity%20of%20the%20Predator%7D%20%5C%5C%5Cdelta%3A%20%5Ctextrm%7BReproduction%20Rate%20of%20Predators%20per%20Prey%20Consumed%7D%20%5C%5C%5Cgamma%3A%20%5Ctextrm%7BPredator%20Mortality%20Rate%7D)
+
+Overall the solutions for Lotka-Volterra equation highlight that neither species every goes extinct due to the fact that as the population of specie 1 drops close to zero, the specie 2's population skyrockets which leads to an increase in the population of specie 1 and thus preventing it from going to zero. Ex: Consider a system with two species: spotted owls (predator) and flying squirrels (prey). If the population of spotted owls drops close to zero, the prey will survive more often which would thus increase their population. This increase in the population of the flying squirrels, would result in more food for the spotted owls and thus cause an increase in the population of spotted owls.
