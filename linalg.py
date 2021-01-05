@@ -281,22 +281,22 @@ with leontief:
 
 	if econ == 'Economy A':
 		producer = np.array([
-								[0.45, 0.35, 0.15],
-								[0.15, 0.25, 0.05],
-								[0.05, 0.05, 0.25]
-							]) 
+			[0.45, 0.35, 0.15],
+			[0.15, 0.25, 0.05],
+			[0.05, 0.05, 0.25]
+			]) 
 	elif econ == 'Economy B':
 		producer = np.array([
-								[0.40, 0.30, 0.10],
-								[0.05, 0.05, 0.65],
-								[0.05, 0.20, 0.05]
-							]) 
+			[0.40, 0.30, 0.10],
+			[0.05, 0.05, 0.65],
+			[0.05, 0.20, 0.05]
+			]) 
 	elif econ == 'Economy C':
 		producer = np.array([
-								[0.10, 0.10, 0.02],
-								[0.60, 0.65, 0.95],
-								[0.15, 0.10, 0.02]
-							]) 
+			[0.10, 0.10, 0.02],
+			[0.60, 0.65, 0.95],
+			[0.15, 0.10, 0.02]
+			]) 
 
 
 	df = pd.DataFrame(producer)
@@ -399,18 +399,18 @@ with lotka:
 
 	def visualization():
 		Predator = Animal(
-						'Spotted Owl', 
-						predator_pop_density, 
-						predator_growth_rate, 
-						predator_death_rate, 
-						'#576574'
-					)
+			'Spotted Owl', 
+			predator_pop_density, 
+			predator_growth_rate, 
+			predator_death_rate, 
+			'#576574'
+			)
 		Prey = Animal(
-				'Flying Squirrel', 
-				prey_pop_density, 
-				prey_growth_rate, 
-				predation_rate, 
-				'#ff9f43'
+			'Flying Squirrel', 
+			prey_pop_density, 
+			prey_growth_rate, 
+			predation_rate, 
+			'#ff9f43'
 			)
 		model = PredatorPreyModel(Prey, Predator, time, 0.0001)
 		return model.plot_simulation()
