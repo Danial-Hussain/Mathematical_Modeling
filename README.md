@@ -1,4 +1,7 @@
 # Mathematical Modeling
+
+<h1 align=center><a href="https://share.streamlit.io/danial-hussain/mathematical_modeling/main/linalg.py">Check out the Streamlit App!</a></h1>
+
 In this project, I sought to implement classic mathematical models, with applications to biology and economics, that I learned from computational linear algebra. The two models are as follows:
 1. Leontief Input-Output Open Linear System
 2. Lotka-Volterra Competition Dynamical System
